@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: bisque;
+}
+
+a{
+    font-size: larger;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin: 20px;
+}
+
+#main_div{
+    display: block;
+}
