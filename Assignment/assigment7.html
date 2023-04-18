@@ -1,30 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 7</title>
 </head>
+
 <body>
     <script>
         //Question 1
-        // var cityName=prompt("Enter Your City Name");
-        // alert("Welcome to " + cityName);
+        var cityName=prompt("Enter Your City Name");
+        alert("Welcome to " + cityName);
 
 
         // Question 2
-        var gander =prompt("Enter Your Gander");
+        var abs =prompt("Enter Your Gander");
 
-        if (gander == "male" || "Male"){
+        if (abs == "male" || abs == "Male"){
         alert("Good Morning Sir");
         }
-        else if(gander == "femail" || "Femail"){
+        else if(abs == "femail" || abs == "Femail"){
             alert("Good Morning Ma'am");
         }
         else{
             alert("Not A Gander")
         }
+
+
+
+        // Question 3
+        var signal = prompt("color of road traffic signal");
+
+        if (signal == "Red" || signal == "red") {
+            alert("Must Stop");
+        }
+        else if (signal == "yellow" || signal == "Yellow") {
+            alert("Ready to move");
+        }
+        else if (signal == "green" || signal == "Green") {
+            alert("Move now");
+        } else {
+            alert("No Signal");
+        };
+
+
+
+        // Question 4
+        var a = 4;
+        if (++a === 5) {
+            alert("given condition for variable a is true");
+        }
+        var b = 82;
+        if (b++ === 83) {
+            alert("given condition for variable b is true");
+        }
+        var c = 12;
+        if (c++ === 13) {
+            alert("condition 1 is true");
+        }
+        if (c === 13) {
+            alert("condition 2 is true");
+        }
+        if (++c < 14) {
+            alert("condition 3 is true");
+        }
+        if (c === 14) {
+            alert("condition 4 is true");
+        }
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) {
+            alert("The cost equals");
+        }
+        if (true) {
+            alert("True");
+        }
+        if (false) {
+            alert("False");
+        }
+        if ("car" < "cat") {
+            alert("car is smaller than cat");
+        };
+
+
+            // Question 7
+            // var sectareNumber = Math.random(10) +1;
+            // // for(var i = 0; i <= 100; i++){
+            // var guessnumber =prompt("Guess the number");
+            // if(sectareNumber.ceil() == guessnumber){
+            //     alert("Bingo Your Answer is Right");
+            //     // break;
+            // }else{
+            //     alert("Try Again the correct number is " + sectareNumber);
+            // };
+        // }
+            
+
     </script>
 </body>
+
 </html>
