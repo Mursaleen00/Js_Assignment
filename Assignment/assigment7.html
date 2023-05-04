@@ -10,46 +10,51 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
     <title>Assignment 7</title>
 </head>
 
 <body>
-      <!--  Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./../index.html"><img class="image_logo" src="./../Img/logo_2.png" alt="JSA"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
-        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+    <!--  Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./../index.html"><img class="image_logo" src="./../Img/logo_2.png"
+                    alt="JSA"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item" href="./assigment1.html">Assigment 1</a></li>
-              <li><a class="dropdown-item" href="./assigment2.html">Assigment 2</a></li>
-              <li><a class="dropdown-item" href="./assigment3.html">Assigment 3</a></li>
-              <li><a class="dropdown-item" href="./assigment4.html">Assigment 4</a></li>
-              <li><a class="dropdown-item" href="./assigment5.html">Assigment 5</a></li>
-              <li><a class="dropdown-item" href="./assigment6.html">Assigment 6</a></li>
-              <li><a class="dropdown-item" href="./assigment7.html">Assigment 7</a></li>
-              <li><a class="dropdown-item" href="./assigment8.html">Assigment 8</a></li>
-              <li><a class="dropdown-item" href="./assigment9.html">Assigment 9</a></li>
-              <li><a class="dropdown-item" href="./assigment10.html">Assigment 10</a></li>
-              <li><a class="dropdown-item" href="./assigment11.html">Assigment 11</a></li>
-              <li><a class="dropdown-item" href="./assigment12.html">Assigment 12</a></li>
-              <li><a class="dropdown-item" href="./assigment13.html">Assigment 13</a></li>
-              <li><a class="dropdown-item" href="./assigment14.html">Assigment 14</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </button>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item" href="./assigment1.html">Assigment 1</a></li>
+                            <li><a class="dropdown-item" href="./assigment2.html">Assigment 2</a></li>
+                            <li><a class="dropdown-item" href="./assigment3.html">Assigment 3</a></li>
+                            <li><a class="dropdown-item" href="./assigment4.html">Assigment 4</a></li>
+                            <li><a class="dropdown-item" href="./assigment5.html">Assigment 5</a></li>
+                            <li><a class="dropdown-item" href="./assigment6.html">Assigment 6</a></li>
+                            <li><a class="dropdown-item" href="./assigment7.html">Assigment 7</a></li>
+                            <li><a class="dropdown-item" href="./assigment8.html">Assigment 8</a></li>
+                            <li><a class="dropdown-item" href="./assigment9.html">Assigment 9</a></li>
+                            <li><a class="dropdown-item" href="./assigment10.html">Assigment 10</a></li>
+                            <li><a class="dropdown-item" href="./assigment11.html">Assigment 11</a></li>
+                            <li><a class="dropdown-item" href="./assigment12.html">Assigment 12</a></li>
+                            <li><a class="dropdown-item" href="./assigment13.html">Assigment 13</a></li>
+                            <li><a class="dropdown-item" href="./assigment14.html">Assigment 14</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
     <script>
         //Question 1
         var cityName = prompt("Enter Your City Name");
@@ -127,9 +132,11 @@
         };
 
 
+
+
         // //Question 7
-        var sectareNumber = Math.round(Math.random()*11);
-        
+        var sectareNumber = Math.round(Math.random() * 11);
+
         var guessnumber = prompt("Guess the number");
         if (sectareNumber == guessnumber) {
             alert("Bingo Your Answer is Right");
@@ -137,38 +144,64 @@
             alert("Try Again the correct number is " + sectareNumber);
         };
 
+        // Question 8
+
+        let num = prompt("Enter a number:");
+
+
+        if (num % 3 === 0) {
+
+            alert(num + "is divisible by 3!");
+        } else {
+
+            alert(num + "is not divisible by 3.");
+        }
+
+        // Question 9
+
+        let num1 = prompt("Enter a number:");
+
+
+        if (num1 % 2 === 0) {
+
+            alert(num1 + "is an even number!");
+        } else {
+
+            alert(num1 + "is an odd number.");
+        }
+
 
         // // Question 10
-        var temp =+prompt("what is your temprature");
+        var temp = +prompt("what is your temprature");
 
-        if(temp == 40){
+        if (temp == 40) {
             alert("It is too hot outside.");
-        } else if(temp == 30){
+        } else if (temp == 30) {
             alert("The weather today is Normal.");
-        } else if(temp == 20){
+        } else if (temp == 20) {
             alert("The today weather is Cool.");
-        } else if( temp = 10){
+        } else if (temp = 10) {
             alert("OMG! Today's weather is so cool.")
         }
 
         //Question 11
-        var firstNumber =+prompt("enter 1st number");
-        var secondNumber =+prompt("enter 2st number");
-        var operater =prompt("enter operater + - * / % &");
-        if(operater == "+"){
+        var firstNumber = +prompt("enter 1st number");
+        var secondNumber = +prompt("enter 2st number");
+        var operater = prompt("enter operater + - * / % &");
+        if (operater == "+") {
             alert(firstNumber + secondNumber + " is your answer");
-        }else if(operater == "-"){
+        } else if (operater == "-") {
             alert(firstNumber - secondNumber + " is your answer");
-        }else if(operater == "*"){
+        } else if (operater == "*") {
             alert(firstNumber * secondNumber + " is your answer");
-        }else if(operater == "/"){
+        } else if (operater == "/") {
             alert(firstNumber / secondNumber + " is your answer");
         }
-        else if(operater == "&"){
+        else if (operater == "&") {
             alert(firstNumber & secondNumber + " is your answer");
-        }else if(operater == "%"){
+        } else if (operater == "%") {
             alert(firstNumber % secondNumber + " is your answer");
-        }else{
+        } else {
             alert("This is not a operater");
         };
 
@@ -176,9 +209,9 @@
 
     </script>
     <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

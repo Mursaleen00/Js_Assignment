@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./../style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Assigment 11</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./../style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Assigment 11</title>
 </head>
+
 <body>
-      <!--  Navbar -->
+  <!--  Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="./../index.html"><img class="image_logo" src="./../Img/logo_2.png" alt="JSA"></a>
@@ -47,10 +49,96 @@
       </div>
     </div>
   </nav>
-    
-    <!-- Bootstrap JS -->
+
+
+  <script>
+
+    // Question 1
+    var firstName = prompt("Enter your first name");
+    var lastName = prompt("Enter your last name");
+    document.write("Welcome " + firstName + " " + lastName);
+
+    // // Question 2
+    document.write("<br><br>")
+    let model = prompt("What is your favorite mobile phone model?");
+    let length = model.length;
+    document.write("The length of your favorite mobile phone model( " + model + " ) is " + length);
+
+    // // Question 6
+    let firstName1 = prompt("What is your first name?");
+    let lastName1 = prompt("What is your last name?");
+    let fullName = firstName1.concat(" ", lastName1);
+    alert("Hello, " + fullName + "! Welcome to our website.");
+
+    // Question 7
+    let originalString = "Hyderabad";
+    let modifiedString = originalString.replace("Hyder", "Islam");
+    document.write("Original String: " + originalString +"<br>");
+    document.write("Modified String: " + modifiedString +"<br>");
+
+    // // Question 8
+    var message = "Ali and Sami are best friends.They play cricket and football together.";
+    var changeMessage = message.replace(/and/g, "&");
+    document.write("Old Message "+ message +"<br>");
+    document.write("New Message "+ changeMessage +"<br>");
+
+
+    // Question 10
+    var sms = prompt("Enter a word");
+    var uppercase = sms.toUpperCase();
+    document.write("User Input: " + sms +"<br>");
+    document.write("Upper Case: " + uppercase +"<br>");
+
+
+
+    // Question 11
+    let userInput = prompt("Enter a string to convert to title case:");
+    let words = userInput.split(" ");
+    for (let i = 0; i < words.length; i++) {
+      let firstLetter = words[i].charAt(0).toUpperCase();
+      let restOfWord = words[i].slice(1).toLowerCase();
+      words[i] = firstLetter + restOfWord;
+    }
+    let titleCaseString = words.join(" ");
+    document.write(titleCaseString);
+
+
+    // Question 12
+    let username = prompt("Enter your username:");
+    let isValid = true;
+
+    for (let i = 0; i < username.length; i++) {
+      let charCode = username.charCodeAt(i);
+
+      if (
+        charCode === 33 ||
+        charCode === 44 ||
+        charCode === 46 ||
+        charCode === 64
+      ) {
+        isValid = false;
+        break;
+      }
+    }
+
+    if (isValid) {
+      alert("Username is valid.");
+    } else {
+      alert(
+        "Username is not valid. Username can only contain letters, numbers, dots, and underscores."
+      );
+    }
+
+
+
+
+
+  </script>
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
