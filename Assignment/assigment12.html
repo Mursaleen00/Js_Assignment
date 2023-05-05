@@ -56,13 +56,13 @@
         // Question 1
         var num = parseInt(prompt("Enter a positive integer:"));
         document.write("<b>Number:</b> " + num + "<br>");
-        
+
         var roundOff = Math.round(num);
         document.write("<b>Round off value:</b> " + roundOff + "<br>");
 
         var floorValue = Math.floor(num);
         document.write("<b>Floor value:</b> " + floorValue + "<br>");
-   
+
         var ceilValue = Math.ceil(num);
         document.write("<b>Ceil value:</b> " + ceilValue + "<br>");
 
@@ -73,24 +73,44 @@
         // Question 2
         var num1 = parseInt(prompt("Enter a positive integer:"));
         document.write("<b>Number:</b> " + num1 + "<br>");
-        
+
         var roundOff1 = Math.round(num1);
         document.write("<b>Round off value:</b> " + roundOff1 + "<br>");
 
         var floorValue2 = Math.floor(num1);
         document.write("<b>Floor value:</b> " + floorValue2 + "<br>");
-   
+
         var ceilValue3 = Math.ceil(num1);
         document.write("<b>Ceil value:</b> " + ceilValue3 + "<br>");
 
-        // Question 3
-        var toss = Math.round() +1;
-        if(toss == 1){
-            document.write("Head");
-        }else{
-            document.write("Teal");
-        };
 
+        // Question 5
+
+        const randomNum = Math.random();
+        const coinTossResult = randomNum < 0.5 ? "Heads" : "Tails";
+        document.write("The coin landed on: " + coinTossResult + "<br>");
+
+
+        // Question 6
+        var ram =Math.round(Math.random() *101);
+        document.write("<b>Random Number Between 1 and 100:</b> " + ram + "<br>");
+
+
+
+        // Question 7
+        let kg = +prompt("Enter you weight in kilograms");
+        document.write("The weigth of user is " + kg + " Kilogram" + "<br>");
+
+
+        // Question 8
+            var secrateNumber =Math.round(Math.random()*11);
+            var userInptu = prompt("Enter a number 1 to 10 ");
+            
+            if(secrateNumber == userInptu){
+                document.write("congratulation you are win " + userInptu + " " + secrateNumber + "<br>");
+            }else{
+                document.write("Please try again " + userInptu + " " + secrateNumber);
+            }
 
 
     </script>
