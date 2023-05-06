@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigment 12</title>
+    <title>Assigment 14</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./../style.css">
     <!-- Bootstrap CSS -->
@@ -51,6 +51,74 @@
             </div>
         </div>
     </nav>
+
+
+    <script>
+
+        function displayDateTime() {
+            const now = new Date();
+            document.write(now + "<br>");
+        };
+
+        function greet() {
+            var firstName = prompt("Enter your First name");
+            var LastName = prompt("Enter your Last name");
+
+            document.write(" Welcome to our Website " + firstName + " " + LastName + "<br>");
+        };
+
+
+        function sum() {
+            let firstNumber = +prompt("Enter First Number");
+            let lastNumber = +prompt("Enter last Number");
+
+            document.write(+firstNumber + +lastNumber + "<br>");
+        };
+
+
+        function calculater() {
+            var firstNumber = +prompt("enter 1st number");
+            var secondNumber = +prompt("enter 2st number");
+            var operater = prompt("enter operater + - * / % &");
+            if (operater == "+") {
+                alert(firstNumber + secondNumber + " is your answer");
+            } else if (operater == "-") {
+                alert(firstNumber - secondNumber + " is your answer");
+            } else if (operater == "*") {
+                alert(firstNumber * secondNumber + " is your answer");
+            } else if (operater == "/") {
+                alert(firstNumber / secondNumber + " is your answer");
+            }
+            else if (operater == "&") {
+                alert(firstNumber & secondNumber + " is your answer");
+            } else if (operater == "%") {
+                alert(firstNumber % secondNumber + " is your answer");
+            } else {
+                alert("This is not a operater");
+            };
+        };
+
+        function count() {
+            var start = +prompt("enter start number");
+            var end = +prompt("enter end number");
+            let counting = '';
+            for (let i = start; i <= end; i++) {
+                counting += i + " ";
+            }
+            document.write(counting);
+        }
+
+
+
+        // displayDateTime();
+        // greet();
+        // sum();
+        // calculater();
+        count();
+
+
+
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
