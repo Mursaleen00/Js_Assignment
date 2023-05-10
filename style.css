@@ -1,60 +1,78 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0rem;
+    margin: 0rem;
     background-color: #DDD0C8;
     color: #323232;
     font-weight: bold;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
-.image_logo{
-    width: 80px;
-    height: 80px;
+body {
+    border: .3rem solid #323232;
 }
 
-.color_my{
+.image_logo {
+    width: 8rem;
+    height: 8rem;
+}
+
+.color_my {
     color: #323232;
     font-weight: bold;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: #323232;
     color: #DDD0C8;
     font-weight: bold;
-};
+}
 
-.bg-dark{
+;
+
+.bg-dark {
     color: #DDD0C8;
 }
 
-.dropdown-item{
+.dropdown-item {
     font-weight: bold;
 }
 
-.img_size{
+.img_size {
     height: 50%;
     width: 50%;
-};
-
-.card{
-    /* border: #323232; */
 }
 
-.col{
+;
+
+.row{
+    background-image: url(./Img/12319936_SL-011719-17920-65.jpg);
+}
+
+.col {
     height: 38%;
     width: 20%;
-    border: #323232 2px solid;
-    margin: auto 0px;
-};
-
-.card_img{
-    box-shadow: 0px 0px 0px 0px #323232;
+    border: #323232 2rem solid;
+    margin: auto 0rem;
 }
 
-.card_img:hover{
-    box-shadow: 3px 3px 3px 3px #32323296;
-};
+;
 
-a{
+.card_img {
+    box-shadow: 0rem 0rem 0rem 0rem #323232;
+}
 
+.card_img:hover {
+    box-shadow: .3rem.3rem.3rem.3rem #32323296;
+}
+
+;
+
+.text_style {
+    text-decoration: none;
+}
+
+
+
+a {
+    text-decoration: none;
 }
