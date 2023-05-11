@@ -12,9 +12,10 @@ body {
     background-color: #DDD0C8;
 }
 
-.navbar{
-    margin-bottom: 2rem;
+.main{
+    padding: 10px;
 }
+
 
 .image_logo {
     width: 8rem;
@@ -30,9 +31,7 @@ body {
     background-color: #323232;
     color: #DDD0C8;
     font-weight: bold;
-}
-
-;
+};
 
 .bg-dark {
     color: #DDD0C8;
@@ -42,42 +41,29 @@ body {
     font-weight: bold;
 }
 
-.img_size {
-    height: 50%;
-    width: 50%;
+.input{
+    display: block;
+    margin: 2%;
+    padding: 2%;
+    background: #323232;
+    color: #DDD0C8;
+    padding-right: 200px;
+    border-radius: 20px;
+};
+
+label{
+    display: block;
+};
+
+.h3{
+    padding-left: 200px;
 }
 
-;
-
-.row{
-    background-image: url(./Img/12319936_SL-011719-17920-65.jpg);
-}
-
-.col {
-    height: 38%;
-    width: 20%;
-    border: #323232 2rem solid;
-    margin: auto 0rem;
-}
-
-;
-
-.card_img {
-    box-shadow: 0rem 0rem 0rem 0rem #323232;
-}
-
-.card_img:hover {
-    box-shadow: .3rem.3rem.3rem.3rem #32323296;
-}
-
-;
-
-.text_style {
-    text-decoration: none;
-}
-
-
-
-a {
-    text-decoration: none;
+.submit{
+    text-align: center;
+    padding: 10px 30px;
+    margin: 10px 150px;
+    background: #323232;
+    color: #DDD0C8;
+    border-radius: 20px;
 }
