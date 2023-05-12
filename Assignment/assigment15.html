@@ -55,7 +55,7 @@
 
 
     <!-- Mark Sheet -->
-    <div class="main">
+    <div class="main" style="display: block;">
         <fieldset>
 
             <legend>
@@ -67,17 +67,17 @@
                     placeholder="Last Name"></label><br>
             <label for="RollNumber">Roll Number:<input id="RollNumber" type="number" class="input"
                     placeholder="Roll Number"></label><br>
-            <label for="English">English:<input id="English" type="number" class="input"
+            <label for="English">English:<input id="English"  maxlength="3" type="number" class="input"
                     placeholder="Enter your Marks in English"></label><br>
-            <label for="Math">Math:<input id="Math" type="number" class="input"
+            <label for="Math">Math:<input id="Math"  max="3" type="number" class="input"
                     placeholder="Enter your Marks in Math"></label><br>
-            <label for="Urdu">Urdu:<input id="Urdu" type="number" class="input"
+            <label for="Urdu">Urdu:<input id="Urdu"  max="3" type="number" class="input"
                     placeholder="Enter your Marks in Urdu"></label><br>
-            <label for="Science">Science:<input id="Science" type="number" class="input"
+            <label for="Science">Science:<input id="Science"  max="3" type="number" class="input"
                     placeholder="Enter your Marks in Science"></label><br>
-            <label for="Computer">Computer:<input id="Computer" type="number" class="input"
+            <label for="Computer">Computer:<input id="Computer"  max="3" type="number" class="input"
                     placeholder="Enter your Marks in Computer"></label><br>
-            <label for="Islamyat">Islamyat:<input id="Islamyat" type="number" class="input"
+            <label for="Islamyat">Islamyat:<input id="Islamyat" max="3"  type="number" class="input"
                     placeholder="Enter your Marks in Islamyat"></label><br>
             <label for="Submit"><input onclick="Marksheet()" id="Submit" type="submit" class="submit"
                     placeholder="Enter your Marks in Islamyat"></label><br>
@@ -85,24 +85,21 @@
     </div>
 
 
-    <script>
-        function Marksheet() {
-            var firstName = document.getElementById("FirstName").value
-            var lastName = document.getElementById("LastName").value
-            var rollNumber = +document.getElementById("RollNumber").value
-            var english = +document.getElementById("English").value
-            var math = +document.getElementById("Math").value
-            var urdu = +document.getElementById("Urdu").value
-            var science = +document.getElementById("Science").value
-            var computer = +document.getElementById("Computer").value
-            var islamyat = +document.getElementById("Islamyat").value
+    <div id="result" style="display:block;">
+        <h2 id="Card">Student Result</h2>
+        <p id="resultName">Name: <span id="fullname"></span></p>
+        <p id="resultEnglish">English Marks: <span id="englishscore"></span></p>
+        <p id="resultMath">Maths Marks: <span id="mathscore"></span></p>
+        <p id="resultComputer">Computer Marks: <span id="computerscore"></span></p>
+        <p id="resultScience">Science Marks: <span id="sciencescore"></span></p>
+        <p id="resultUrdu">Urdu Marks: <span id="urduscore"></span></p>
+        <p id="resultIslamyat">Islamyat Marks: <span id="ismamyatscore"></span></p>
+        <p id="resultName">Total Marks: <span id="totalmarks"></span></p>
+        <p id="resultName">persontage: <span id="persontage"></span></p>
+    </div>
 
-            var totleNumber = english + math + urdu + science + computer + islamyat;
-            var persontage = Math.round(totleNumber / 600 * 100);
 
-            document.write("Name: " + firstName + " " + lastName + " <br> " + "Roll Number " + rollNumber + " <br> " + "Marks of English " + english + " <br> " + "Marks of Math " +math + " <br> " + "Marks of Urdu " + urdu + " <br> " + "Marks of Science " + science + " <br> " + "Marks of Computer " + computer + " <br> " + "Marks of islamyat " + islamyat + " <br> " + +totleNumber + " / 600" + "<br>" + +persontage + "% / 100%" );
-        };
-    </script>
+    <Script src="./app.js"></Script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
