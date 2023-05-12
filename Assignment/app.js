@@ -15,6 +15,7 @@ function Marksheet() {
 
     document.getElementById("fullname").innerHTML = firstName + " " + lastName;
     document.getElementById("englishscore").innerHTML = english;
+    document.getElementById("rollNunber").innerHTML = rollNumber;
     document.getElementById("mathscore").innerHTML = math;
     document.getElementById("computerscore").innerHTML = computer;
     document.getElementById("sciencescore").innerHTML = science;
@@ -22,8 +23,11 @@ function Marksheet() {
     document.getElementById("ismamyatscore").innerHTML = islamyat;
     document.getElementById("totalmarks").innerHTML = totleNumber + " / 600";
     document.getElementById("persontage").innerHTML = persontage + "% / 100%";
+    document.getElementById("grade").innerHTML = "A+";
 
+    document.getElementsByTagName("form")[0].style.display = "none";
     document.getElementById("result").style.display = "block";
-    document.getElementById("main")[0].style.display = "none";
-    document.getElementById("Card").style.color = "blue";
+    document.getElementById("result").style.padding = "20px";
+
+
 };

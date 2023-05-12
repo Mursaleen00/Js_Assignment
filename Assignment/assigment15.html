@@ -14,11 +14,13 @@
 </head>
 
 <body>
+    <!-- <img class="image_logo" src="./../Img/logo_2.png" alt="JSA"> -->
     <!--  Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./../index.html"><img class="image_logo" src="./../Img/logo_2.png"
-                    alt="JSA"></a>
+            <a class="navbar-brand" href="./../index.html">
+                <h1>JSA</h1>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -55,47 +57,133 @@
 
 
     <!-- Mark Sheet -->
-    <div class="main" style="display: block;">
-        <fieldset>
+    <form action="">
+        <div class="main" style="display: block;">
+            <fieldset>
 
-            <legend>
-                <h3 class="h3">Marks Sheet</h3>
-            </legend>
-            <label for="FirstName">First Name:<input id="FirstName" type="text" class="input"
-                    placeholder="First Name"></label><br>
-            <label for="lastName">Last Name:<input id="LastName" type="text" class="input"
-                    placeholder="Last Name"></label><br>
-            <label for="RollNumber">Roll Number:<input id="RollNumber" type="number" class="input"
-                    placeholder="Roll Number"></label><br>
-            <label for="English">English:<input id="English"  maxlength="3" type="number" class="input"
-                    placeholder="Enter your Marks in English"></label><br>
-            <label for="Math">Math:<input id="Math"  max="3" type="number" class="input"
-                    placeholder="Enter your Marks in Math"></label><br>
-            <label for="Urdu">Urdu:<input id="Urdu"  max="3" type="number" class="input"
-                    placeholder="Enter your Marks in Urdu"></label><br>
-            <label for="Science">Science:<input id="Science"  max="3" type="number" class="input"
-                    placeholder="Enter your Marks in Science"></label><br>
-            <label for="Computer">Computer:<input id="Computer"  max="3" type="number" class="input"
-                    placeholder="Enter your Marks in Computer"></label><br>
-            <label for="Islamyat">Islamyat:<input id="Islamyat" max="3"  type="number" class="input"
-                    placeholder="Enter your Marks in Islamyat"></label><br>
-            <label for="Submit"><input onclick="Marksheet()" id="Submit" type="submit" class="submit"
-                    placeholder="Enter your Marks in Islamyat"></label><br>
-        </fieldset>
-    </div>
+                <legend>
+                    <h3 class="h3">Marks Sheet</h3>
+                </legend>
+                <label for="FirstName">First Name:<input id="FirstName" type="text" class="input"
+                        placeholder="First Name"></label><br>
+                <label for="lastName">Last Name:<input id="LastName" type="text" class="input"
+                        placeholder="Last Name"></label><br>
+                <label for="RollNumber">Roll Number:<input id="RollNumber" type="number" class="input"
+                        placeholder="Roll Number"></label><br>
+                <label for="English">English:<input id="English"  type="number" class="input"
+                        placeholder="Enter your Marks in English"></label><br>
+                <label for="Math">Math:<input id="Math" max="3" type="number" class="input"
+                        placeholder="Enter your Marks in Math"></label><br>
+                <label for="Urdu">Urdu:<input id="Urdu" max="3" type="number" class="input"
+                        placeholder="Enter your Marks in Urdu"></label><br>
+                <label for="Science">Science:<input id="Science" max="3" type="number" class="input"
+                        placeholder="Enter your Marks in Science"></label><br>
+                <label for="Computer">Computer:<input id="Computer" max="3" type="number" class="input"
+                        placeholder="Enter your Marks in Computer"></label><br>
+                <label for="Islamyat">Islamyat:<input id="Islamyat" max="3" type="number" class="input"
+                        placeholder="Enter your Marks in Islamyat"></label><br>
+                <label for="Submit"><input onclick="Marksheet()" id="Submit" type="submit" class="submit"
+                        placeholder="Enter your Marks in Islamyat"></label><br>
+            </fieldset>
+        </div>
+    </form>
 
-
-    <div id="result" style="display:block;">
-        <h2 id="Card">Student Result</h2>
-        <p id="resultName">Name: <span id="fullname"></span></p>
-        <p id="resultEnglish">English Marks: <span id="englishscore"></span></p>
-        <p id="resultMath">Maths Marks: <span id="mathscore"></span></p>
-        <p id="resultComputer">Computer Marks: <span id="computerscore"></span></p>
-        <p id="resultScience">Science Marks: <span id="sciencescore"></span></p>
-        <p id="resultUrdu">Urdu Marks: <span id="urduscore"></span></p>
-        <p id="resultIslamyat">Islamyat Marks: <span id="ismamyatscore"></span></p>
-        <p id="resultName">Total Marks: <span id="totalmarks"></span></p>
-        <p id="resultName">persontage: <span id="persontage"></span></p>
+    <div id="result" style="display:none;">
+        <table>
+            <tr>
+                <th>
+                    <h2 id="Card">Student Result</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultName">Name: </p>
+                </td>
+                <td>
+                    <p><span id="fullname"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="rollnumber">Roll Number: </p>
+                </td>
+                <td>
+                    <p><span id="rollNunber"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultEnglish">English Marks: </p>
+                </td>
+                <td>
+                    <p><span id="englishscore"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultMath">Maths Marks: </p>
+                </td>
+                <td>
+                    <p><span id="mathscore"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultComputer">Computer Marks: </p>
+                </td>
+                <td>
+                    <p><span id="computerscore"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultScience">Science Marks: </p>
+                </td>
+                <td>
+                    <p><span id="sciencescore"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultUrdu">Urdu Marks: </p>
+                </td>
+                <td>
+                    <p><span id="urduscore"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultIslamyat">Islamyat Marks: </p>
+                </td>
+                <td>
+                    <p><span id="ismamyatscore"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultName">Total Marks: </p>
+                </td>
+                <td>
+                    <p><span id="totalmarks"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resultName">Persontage: </p>
+                </td>
+                <td>
+                    <p><span id="persontage"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p >Grade: </p>
+                </td>
+                <td>
+                    <p><span id="grade"></span></p>
+                </td>
+            </tr>
+        </table>
     </div>
 
 
