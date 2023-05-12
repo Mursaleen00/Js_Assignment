@@ -23,11 +23,34 @@ function Marksheet() {
     document.getElementById("ismamyatscore").innerHTML = islamyat;
     document.getElementById("totalmarks").innerHTML = totleNumber + " / 600";
     document.getElementById("persontage").innerHTML = persontage + "% / 100%";
-    document.getElementById("grade").innerHTML = "A+";
 
     document.getElementsByTagName("form")[0].style.display = "none";
     document.getElementById("result").style.display = "block";
     document.getElementById("result").style.padding = "20px";
+    document.getElementById("result").style.fontSize = "20px";
+    document.getElementById("Card").style.fontSize = "30px";
+    document.getElementById("Card").style.textDecoration = "underline";
 
 
+    if (persontage >= 95) {
+        document.getElementById("grade").innerHTML = "A+";
+    }
+    else if(persontage >= 90){
+        document.getElementById("grade").innerHTML = "A";
+    }
+    else if(persontage >= 80){
+        document.getElementById("grade").innerHTML = "B";
+    }
+    else if(persontage >= 70){
+        document.getElementById("grade").innerHTML = "C";
+    }
+    else if(persontage >= 60){
+        document.getElementById("grade").innerHTML = "D";
+    }
+    else if(persontage >= 50){
+        document.getElementById("grade").innerHTML = "E";
+    }
+    else if(persontage >= 0){
+        document.getElementById("grade").innerHTML = "F";
+    }
 };

@@ -12,7 +12,7 @@ body {
     background-color: #DDD0C8;
 }
 
-.main{
+.main {
     padding: 10px;
 }
 
@@ -31,7 +31,9 @@ body {
     background-color: #323232;
     color: #DDD0C8;
     font-weight: bold;
-};
+}
+
+;
 
 .bg-dark {
     color: #DDD0C8;
@@ -43,7 +45,7 @@ body {
 
 
 
-.input{
+.input {
     display: block;
     margin: 2%;
     padding: 2%;
@@ -51,21 +53,56 @@ body {
     color: #DDD0C8;
     padding-right: 200px;
     border-radius: 20px;
-};
+}
 
-label{
+;
+
+label {
     display: block;
-};
+}
 
-.h3{
+;
+
+.h3 {
     padding-left: 200px;
 }
 
-.submit{
+
+form{
+    border: #323232 2px solid;
+    
+}
+
+.submit {
     text-align: center;
-    padding: 10px 30px;
-    margin: 10px 150px;
+    padding: 10px 100px;
+    margin: 10px 10px;
     background: #323232;
     color: #DDD0C8;
     border-radius: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .input {
+        display: block;
+        margin: 2%;
+        padding: 2%;
+        background: #323232;
+        color: #DDD0C8;
+        padding-right: 50px;
+        border-radius: 20px;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width: 600px) {
+    .input {
+        display: block;
+        margin: 2%;
+        padding: 2%;
+        background: #323232;
+        color: #DDD0C8;
+        padding-right: 100px;
+        border-radius: 20px;
+    }
 }
